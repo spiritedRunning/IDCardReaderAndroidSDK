@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal|vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名：" />
+                <TextView
+                    android:id="@+id/textNameContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textENNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="英文姓名："
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textENNameContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text=""
+                    android:visibility="invisible" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textSexTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别：" />
+
+                <TextView
+                    android:id="@+id/textSexContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textNationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="民族/国家：" />
+
+                <TextView
+                    android:id="@+id/textNationContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textBornTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出生日期：" />
+
+                <TextView
+                    android:id="@+id/textBornContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textLicIDTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(身份)证件号码：" />
+
+                <TextView
+                    android:id="@+id/textLicIDContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textAddrTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="住址：" />
+
+                <TextView
+                    android:id="@+id/textAddrContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textDepartTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签发机关：" />
+
+                <TextView
+                    android:id="@+id/textDepartContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textExpireDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期限：" />
+
+                <TextView
+                    android:id="@+id/textExpireDateContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text="" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textPassNoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通行证号："
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textPassNoContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text=""
+                    android:visibility="invisible" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textVisaTimesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签注次数："
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textVisaTimesContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline"
+                    android:text=""
+                    android:visibility="invisible" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textBlockAddrTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="块地址(0~63)："
+                    />
+                <EditText
+                    android:id="@+id/editBlockAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textKeyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扇区密码(HEX)："
+                    />
+                <EditText
+                    android:id="@+id/editKeyData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:text="FFFFFFFFFFFF"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textBlockData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="块数据(HEX)："
+                    />
+                <EditText
+                    android:id="@+id/editBlockData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:text="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnConnect"
+                    android:text="连接" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnDisconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnDisconnect"
+                    android:text="断开" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btnReadIDCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnReadIDCard"
+                    android:text="读身份证" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btnGetFirmwareversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnGetFirmwareversion"
+                    android:text="固件版本" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnGetICSnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnGetICSnr"
+                    android:text="IC卡物理卡号" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnGetIDSnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBnGetIDSnr"
+                    android:text="身份证物理卡号" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnReadICCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBnReadICCard"
+                android:text="读IC卡" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnWriteICCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBnWriteICCard"
+                android:text="写IC卡" />
+            </TableRow>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
